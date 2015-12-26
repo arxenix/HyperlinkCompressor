@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  center
+    h1= message
+    h2= error.status
+    if error.stack
+      pre #{error.stack}
+    a(href="https://hyperlinkcompressor-bobacadodl.c9users.io") Go Back

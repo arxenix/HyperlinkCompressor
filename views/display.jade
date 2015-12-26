@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  center
+    h1= message
+    br
+    input(type="text" value=url readonly size=url.length onClick="this.select();")

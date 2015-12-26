@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  center
+    h1 HyperlinkCompressor
+    form.col-md-6.col-md-offset-3.col-sm-8.col-sm-offset-2(method="post")
+      label Your URL
+      div.input-group
+        input.form-control(type="text" placeholder="URL to shorten..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name="url")
+        span.input-group-btn
+          button.btn.btn-default(type="submit") Go!
